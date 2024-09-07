@@ -1,6 +1,6 @@
 # 💫 About Me:
 I am currently working on writing AI tools from scratch<br><br>I have a ton of projects in my head and I am always happy to collaborate with others who take interest<br><br>Also I am always ready to help and share the little knowledge I have...<br>
-Visit my portfolio website: [![https://hermanumrao.github.io/portfolio/](https://hermanumrao.github.io/portfolio/)]
+Visit my portfolio website: [https://hermanumrao.github.io/portfolio/](https://hermanumrao.github.io/portfolio/)
 <br>If you have anything just reach out to me on any of the below platforms:
 
 
