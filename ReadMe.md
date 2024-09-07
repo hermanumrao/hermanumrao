@@ -1,5 +1,7 @@
 # 💫 About Me:
-I am currently working on writing AI tools from scratch<br><br>I have a ton of projects in my head and I am always happy to collaborate with others who take interest<br><br>Also I am always ready to help and share the little knowledge I have<br>If you have anything just reach out to me on <br>insta : https://www.instagram.com/cosmos_of_herman/<br>linkedin : https://www.linkedin.com/in/herman-singh-umrao/<br>discord :  discordapp.com/users/879406722723246120
+I am currently working on writing AI tools from scratch<br><br>I have a ton of projects in my head and I am always happy to collaborate with others who take interest<br><br>Also I am always ready to help and share the little knowledge I have...<br>
+Visit my portfolio website: [![https://hermanumrao.github.io/portfolio/](https://hermanumrao.github.io/portfolio/)]
+<br>If you have anything just reach out to me on any of the below platforms:
 
 
 ## 🌐 Socials:
