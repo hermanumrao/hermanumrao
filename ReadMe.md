@@ -1,81 +1,177 @@
-# Herman Singh Umrao
-### Robotics Software Engineer — ROS2 Autonomous Navigation & Edge AI/Computer Vision
+# 🤖 Hi, I'm Herman Singh Umrao 👋
+### **Robotics Software Engineer — ROS2 Autonomous Navigation & Edge AI/Computer Vision**
 
-I build autonomous navigation stacks for ground rovers (SLAM, localization, path planning) and the embedded/edge AI systems that go with them — from sensor input to motor output. **Open to freelance and contract work** in robotics, embedded systems, and computer vision.
+<p align="left">
+  <a href="mailto:hermanumrao@gmail.com"><img src="https://img.shields.io/badge/Email-hermanumrao%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
+  <a href="https://linkedin.com/in/herman-singh-umrao"><img src="https://img.shields.io/badge/LinkedIn-Herman%20Singh%20Umrao-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+  <a href="https://hermanumrao.github.io/"><img src="https://img.shields.io/badge/Portfolio-hermanumrao.github.io-0055FF?style=for-the-badge&logo=firefoxbrowser&logoColor=white"/></a>
+</p>
 
-📧 [hermanumrao@gmail.com](mailto:hermanumrao@gmail.com) &nbsp;|&nbsp; 💼 [LinkedIn](https://linkedin.com/in/herman-singh-umrao) &nbsp;|&nbsp; 🌐 [Portfolio](https://hermanumrao.github.io/)
+I build autonomous navigation stacks for ground rovers (SLAM, localization, path planning) and the embedded/edge AI systems that go with them — from sensor input to motor output. 
 
----
-
-## 🛠️ What I Can Build For You
-
-- **ROS2 navigation stacks** — SLAM (FAST-LIO, SAM-LIO, Cartographer, slam_toolbox, ORB-SLAM), localization (NDT scan matching, GICP, TEASER/TEASER++), path planning (pure pursuit, Nav2), and PID control tuning
-- **Drive systems** — Ackermann, 2WD/4WD skid-steer, and mecanum-wheel platforms, including support for Clearpath rovers and TurtleBot
-- **Sensor integration** — LiDAR (Livox, RPLiDAR, ST/STM32 LDx series), depth cameras (ZED, RealSense), monocular depth estimation, mmWave and UWB ranging/positioning, Pi Cam
-- **Embedded firmware** — ESP32 (incl. ESP32-CSI) and STM32 (STM32CubeIDE/CubeMX) firmware for motor control, sensor telemetry, and wireless robot control; FTDI/serial bring-up
-- **Simulation & data tooling** — NVIDIA Isaac Sim, Gazebo, RTAB-Map and CloudCompare for point-cloud inspection/processing
-- **Computer vision pipelines** — detection, tracking, and recognition models, including edge-deployment-ready (TensorFlow Lite/ONNX) versions, deployable on Jetson or Raspberry Pi
-- **Drone systems** — ArduPilot-based flight stacks, custom motor/ESC test benches, and drone hardware integration
-- **Hardware build-out** — breadboard/perfboard prototyping, battery management and monitoring circuits, FDM 3D-printed enclosures and mechanical parts
-- **Rapid prototyping** — proven track record of going from idea to working hardware prototype in 1–2 days (see ESP32 DeskBot below)
-
-If your project touches any of the above, [let's talk](mailto:hermanumrao@gmail.com).
+⚙️ **Available for Freelance & Contract Work** in robotics hardware/software architecture, embedded systems, and machine vision.
 
 ---
 
-## 🤖 Featured Projects
+## ⚡ What I Can Build For You
 
-### [Reloc3D-ROS2](https://github.com/hermanumrao/Reloc3D-ROS2_V1)
-A ROS2 Humble package that recovers a rover's global position from a 3D LiDAR scan with no prior pose estimate — combines TEASER++ for global registration with GICP for continuous scan-to-map refinement. Drops directly into a FAST-LIO odometry pipeline and integrates with Nav2 via proper TF fusion. Handles sparse, non-uniform scans (e.g. Livox MID-360) that trip up naive ICP approaches.
+<details open>
+<summary>🛠️ <b>Autonomy, Navigation & Drive Systems</b></summary>
+<br>
 
-### [ESP32 DeskBot](https://github.com/hermanumrao/ESP32_deskbot)
-Concept-to-working-hardware in **under 15 hours**: an autonomous desk robot with ToF-based obstacle avoidance, live IMU/LiDAR telemetry over WebSocket and UDP, and phone-browser teleop with zero app install. A good reference for how fast I can turn around a self-contained embedded prototype.
+- **ROS2 Navigation Stacks:** Complete integration of SLAM (`FAST-LIO`, `SAM-LIO`, `Cartographer`, `slam_toolbox`, `ORB-SLAM`), point-cloud localization (`NDT scan matching`, `GICP`, `TEASER/TEASER++`), path planning (`Nav2`, `pure pursuit`), and precision PID control tuning.
+- **Drive Kinematics:** Custom drive system configurations for **Ackermann steering, 2WD/4WD skid-steer, and Mecanum-wheel platforms**. Experienced with Clearpath rovers and TurtleBot ecosystems.
+- **Simulation & Point-Clouds:** Virtual environment configurations via `NVIDIA Isaac Sim` and `Gazebo`; post-processing with `RTAB-Map` and `CloudCompare`.
+</details>
 
-### [face_detection-recognition](https://github.com/hermanumrao/face_detection-recognition)
-A full face-detection/tracking pipeline built end-to-end: custom dataset capture and labeling, augmentation, and a VGG16-based dual-head model (classification + bounding-box regression) trained with a hand-written Keras training loop, running live off webcam input. Demonstrates the full CV pipeline a client project would need — not just a pretrained model wrapped in a script.
+<details open>
+<summary>🔌 <b>Embedded Firmware & Sensor Integration</b></summary>
+<br>
 
-### [localization-via-slam](https://github.com/hermanumrao/localization-via-slam)
-A set of production-oriented SLAM tools: a custom occupancy-grid mapper that drops the strict TF-tree requirement of `slam_toolbox`, a PCL-to-LaserScan converter, and a pose-estimation model trained directly on filtered LiDAR scans.
+- **Sensors:** Dense/sparse LiDAR arrays (`Livox MID-360`, `RPLiDAR`, `ST/STM32 LDx series`), stereoscopic/depth vision (`ZED`, `RealSense`), monocular depth estimation network deployment, `mmWave` & `UWB` spatial ranging.
+- **Firmware:** Custom `ESP32` (including `ESP32-CSI` tracking) and `STM32` (`STM32CubeIDE/CubeMX`) code bases written for low-latency motor control, custom sensor telemetry parsing, and radio-link configurations.
+</details>
 
-### [VectorDB-words](https://github.com/hermanumrao/VectorDB-words)
-A vector database for word embeddings built from scratch in C++ with minimal dependencies, including an in-house GloVe-style embedding model — shows comfort working below the framework layer when performance or control matters.
+<details open>
+<summary>👁️ <b>Edge AI, Drones & Rapid Hardware Prototyping</b></summary>
+<br>
 
----
-
-## 🧩 More Projects
-
-**ROS2 / Autonomy stack** — [ros2_ackermann_path_planner](https://github.com/hermanumrao/ros2_ackermann_path_planner) (hybrid A* planner for Ackermann steering), [ros2_ackermann_to_motor](https://github.com/hermanumrao/ros2_ackermann_to_motor) & [ros2_ackermann_motor_ctrl](https://github.com/hermanumrao/ros2_ackermann_motor_ctrl) (Ackermann drive commands → Arduino Mega over serial), [ros2_ackermann_keyboard_teleop](https://github.com/hermanumrao/ros2_ackermann_keyboard_teleop), [ROS2_pcd_to_occupancy_grid](https://github.com/hermanumrao/ROS2_pcd_to_occupancy_grid), [3d-mapping-rover](https://github.com/hermanumrao/3d-mapping-rover) (FAST-LIO + Livox), [wormhole_nav](https://github.com/hermanumrao/wormhole_nav) (multi-map navigation with SQL-backed room transitions), [realsense_LFR_ackermann](https://github.com/hermanumrao/realsense_LFR_ackermann) (RealSense line-follower for warehouse automation), [Qt_turtlebot_relocalizer](https://github.com/hermanumrao/Qt_turtlebot_relocalizer) (PyQt dashboard for live relocalization telemetry), [Autnomous-nav-DOCS](https://github.com/hermanumrao/Autnomous-nav-DOCS)
-
-**Computer Vision** — [openCV_projects_cpp](https://github.com/hermanumrao/openCV_projects_cpp), [openCV_projects_python](https://github.com/hermanumrao/openCV_projects_python)
-
-**Hardware / Embedded** — [arduino-files](https://github.com/hermanumrao/arduino-files) (drone lift mechanisms, BLDC/ESC testing, RC car + LiDAR), [edgeAI-cctv](https://github.com/hermanumrao/edgeAI-cctv) (capstone project: edge-AI inference on CCTV feeds)
-
-**AI/ML fundamentals** — [neural-network](https://github.com/hermanumrao/neural-network), [simple-XOR-perceptron](https://github.com/hermanumrao/simple-XOR-perceptron), [text_completion_NLP](https://github.com/hermanumrao/text_completion_NLP), [pyTorch-cpp-Tutorials](https://github.com/hermanumrao/pyTorch-cpp-Tutorials), [Verilog MIPS processor](https://github.com/hermanumrao/Verilog)
-
-**Other** — [water_suply_management](https://github.com/hermanumrao/water_suply_management) (Flask + SQLite), [phonebook](https://github.com/hermanumrao/phonebook) (trie-based, team project), [code_templates](https://github.com/hermanumrao/code_templates), [dot-config](https://github.com/hermanumrao/dot-config), [Rust_simple](https://github.com/hermanumrao/Rust_simple), [c-tutorial](https://github.com/hermanumrao/c-tutorial)
+- **Computer Vision:** End-to-end perception pipelines (object detection, spatial tracking, feature recognition) compiled into edge-friendly runtimes (`TensorFlow Lite`, `ONNX`) for deployment on `Nvidia Jetson` or `Raspberry Pi`.
+- **Aviation:** `ArduPilot`-based flight stack setups, payload mechanics, customized motor/ESC dynamometer test benches, and structural integration for specialized delivery and agricultural drones.
+- **Hardware Integration:** Speed-optimized breadboard/perfboard electrical prototyping, custom battery management system (BMS) logic, and robust `FDM 3D-printed` custom structural enclosures. **Proven runtime optimization:** going from raw idea to fully functional hardware prototype inside 24 hours.
+</details>
 
 ---
 
-## 💻 Tech Stack
-![C](https://img.shields.io/badge/c-%2300599C.svg?style=plastic&logo=c&logoColor=white) ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=plastic&logo=c%2B%2B&logoColor=white) ![Python](https://img.shields.io/badge/python-3670A0?style=plastic&logo=python&logoColor=ffdd54) ![Rust](https://img.shields.io/badge/rust-%23000000.svg?style=plastic&logo=rust&logoColor=white) ![ROS](https://img.shields.io/badge/ROS-%2322314E.svg?style=plastic&logo=ros&logoColor=white) ![NVIDIA](https://img.shields.io/badge/NVIDIA%20Jetson-76B900.svg?style=plastic&logo=nvidia&logoColor=white) ![Raspberry Pi](https://img.shields.io/badge/-Raspberry_Pi-C51A4A?style=plastic&logo=Raspberry-Pi) ![OpenCV](https://img.shields.io/badge/opencv-%23white.svg?style=plastic&logo=opencv&logoColor=white) ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=plastic&logo=TensorFlow&logoColor=white) ![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=plastic&logo=PyTorch&logoColor=white) ![Keras](https://img.shields.io/badge/Keras-%23D00000.svg?style=plastic&logo=Keras&logoColor=white) ![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=plastic&logo=scikit-learn&logoColor=white) ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=plastic&logo=numpy&logoColor=white) ![Arduino](https://img.shields.io/badge/-Arduino-00979D?style=plastic&logo=Arduino&logoColor=white) ![STMicroelectronics](https://img.shields.io/badge/STM32-03234B.svg?style=plastic&logo=stmicroelectronics&logoColor=white) ![Qt](https://img.shields.io/badge/Qt-%23217346.svg?style=plastic&logo=qt&logoColor=white) ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=plastic&logo=docker&logoColor=white) ![CMake](https://img.shields.io/badge/CMake-%23008FBA.svg?style=plastic&logo=cmake&logoColor=white) ![Flask](https://img.shields.io/badge/flask-%23000.svg?style=plastic&logo=flask&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/postgres-%23316192.svg?style=plastic&logo=postgresql&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=plastic&logo=mongodb&logoColor=white) ![Linux](https://img.shields.io/badge/linux-%23FCC624.svg?style=plastic&logo=linux&logoColor=black)
+## 🚀 Featured Projects
 
-**Robotics & Autonomy:** ROS2 · Nav2 · Pure Pursuit · PID Control · Ackermann / 2WD / 4WD Skid-Steer / Mecanum Drive · TurtleBot · Clearpath Rovers· FDM 3D printing
+### 📡 [Reloc3D-ROS2](https://github.com/hermanumrao/Reloc3D-ROS2_V1)
+> **Global 3D LiDAR Relocalization package for ROS2 Humble.**
+- Recovers global coordinates without a prior pose estimate by executing a robust correspondence-free global registration (`TEASER++`) combined with sequential iterative closest point adjustment (`GICP`).
+- Plugs directly into standard `FAST-LIO` pipelines and broadcasts correct coordinate updates to `Nav2` via proper TF fusion.
+- Built to handle sparse, non-uniform spatial scans (e.g., `Livox MID-360`) that typical naive point-matching frameworks fail to resolve.
 
-**SLAM & Localization:** FAST-LIO · SAM-LIO · Cartographer · slam_toolbox · ORB-SLAM · RTAB-Map · NDT Scan Matching · GICP · TEASER / TEASER++ · CloudCompare
+### 🏎️ [ESP32 DeskBot](https://github.com/hermanumrao/ESP32_deskbot)
+> **Fully autonomous micro-rover turned around from concept to operating hardware in under 15 hours.**
+- Integrates time-of-flight (ToF) obstacle collision avoidance and publishes live IMU/LiDAR telemetry matrices via concurrent `WebSocket` and `UDP` streams.
+- Provides an instantly accessible browser-based mobile controller dashboard requiring zero client app installation. 
 
-**Sensors:** Livox, RPLiDAR & STM32 LDx-series LiDAR · ZED & RealSense depth cameras · Monocular depth perception · Pi Cam · mmWave · UWB
+### 👁️ [Face Detection & Tracking Pipeline](https://github.com/hermanumrao/face_detection-recognition)
+> **An end-to-end computer vision tracking system optimized for live processing.**
+- Built from raw framework layer up: proprietary training-set capture routines, structural dataset data augmentation, and a dual-headed `VGG16` network topology configured for concurrent classification and coordinate bounding-box regression.
+- Utilizes a purely hand-written custom Keras training loop running dynamic inference pipelines live over raw webcam streams.
 
-**Embedded & Hardware:** ESP32 (ESP-IDF, ESP32-CSI) · STM32 (STM32CubeIDE/CubeMX) · FTDI/serial bring-up · Breadboard & perfboard prototyping · Battery management & monitoring circuits
+### 🗺️ [Localization via SLAM](https://github.com/hermanumrao/localization-via-slam)
+> **Production-ready standalone spatial mapping and odometry toolkit.**
+- Features a proprietary occupancy-grid calculation pipeline designed to drop strict structural TF-tree constraints typically requested by standard `slam_toolbox`.
+- Includes efficient `PCL-to-LaserScan` conversion utilities and a structural pose estimation model trained directly on filtered, downsampled raw LiDAR scans.
 
-**Drones :** ArduPilot · Jetson · Custom drone motor/ESC test benches . delivery drones . agri-drones
-
-**CAD/Sim:** FreeCAD . Blender . RViz2 . Gazebo . Nvidia ROS stack
+### 🗄️ [VectorDB-Words](https://github.com/hermanumrao/VectorDB-words)
+> **High-performance minimalist vector database engine engineered from scratch in native C++.**
+- Zero massive external framework dependencies; includes an in-house engineered word embedding model optimized for memory constraints. Designed for applications where sub-framework compute control is required.
 
 ---
 
-![](https://github-readme-stats.vercel.app/api?username=hermanumrao&theme=city_lights&hide_border=false&include_all_commits=true&count_private=true)<br/>
-![](https://github-profile-trophy.vercel.app/?username=hermanumrao&theme=radical&no-frame=false&no-bg=true&margin-w=4)
+## 🧩 Additional Repository Index
+
+<div align="left">
+  <table>
+    <tr>
+      <td><b>🤖 Autonomy & Controls</b></td>
+      <td>
+        • <a href="https://github.com/hermanumrao/ros2_ackermann_path_planner">ros2_ackermann_path_planner</a> — Hybrid A* path planning for car-like chassis.<br>
+        • <a href="https://github.com/hermanumrao/ros2_ackermann_to_motor">ros2_ackermann_to_motor</a> — Translation engine parsing commands to hardware.<br>
+        • <a href="https://github.com/hermanumrao/ros2_ackermann_motor_ctrl">ros2_ackermann_motor_ctrl</a> — Serial motor bridge running over Arduino Mega.<br>
+        • <a href="https://github.com/hermanumrao/ros2_ackermann_keyboard_teleop">ros2_ackermann_keyboard_teleop</a> — Custom keyboard validation layouts.<br>
+        • <a href="https://github.com/hermanumrao/ROS2_pcd_to_occupancy_grid">ROS2_pcd_to_occupancy_grid</a> — Automated point-cloud projection engine.<br>
+        • <a href="https://github.com/hermanumrao/3d-mapping-rover">3d-mapping-rover</a> — Portable mapping rig using FAST-LIO & Livox hardware.<br>
+        • <a href="https://github.com/hermanumrao/wormhole_nav">wormhole_nav</a> — Multi-map transit transitions tracking via SQL data engines.<br>
+        • <a href="https://github.com/hermanumrao/realsense_LFR_ackermann">realsense_LFR_ackermann</a> — RealSense vision-based line tracking for AGVs.<br>
+        • <a href="https://github.com/hermanumrao/Qt_turtlebot_relocalizer">Qt_turtlebot_relocalizer</a> — Performance PyQt console dashboard tracking odometry.<br>
+        • <a href="https://github.com/hermanumrao/Autnomous-nav-DOCS">Autnomous-nav-DOCS</a> — Core autonomy engineering notes & setup scripts.
+      </td>
+    </tr>
+    <tr>
+      <td><b>💻 Vision & Embeds</b></td>
+      <td>
+        • <a href="https://github.com/hermanumrao/openCV_projects_cpp">openCV_projects_cpp</a> / <a href="https://github.com/hermanumrao/openCV_projects_python">openCV_projects_python</a> — Low-latency computer vision routines.<br>
+        • <a href="https://github.com/hermanumrao/arduino-files">arduino-files</a> — Custom firmware scripts for BLDC/ESC benches, drone lift structures, and RC conversions.<br>
+        • <a href="https://github.com/hermanumrao/edgeAI-cctv">edgeAI-cctv</a> — Capstone deployment: Low-power edge neural network inferencing over CCTV stream grids.
+      </td>
+    </tr>
+    <tr>
+      <td><b>🧠 Core Foundations</b></td>
+      <td>
+        • <a href="https://github.com/hermanumrao/neural-network">neural-network</a> — Forward/backward mathematical propagation engines in raw matrices.<br>
+        • <a href="https://github.com/hermanumrao/simple-XOR-perceptron">simple-XOR-perceptron</a> — Fundamental classification mathematical checks.<br>
+        • <a href="https://github.com/hermanumrao/text_completion_NLP">text_completion_NLP</a> — Minimal NLP word matrix sequencer.<br>
+        • <a href="https://github.com/hermanumrao/pyTorch-cpp-Tutorials">pyTorch-cpp-Tutorials</a> — High-performance execution configurations using libtorch C++ bindings.<br>
+        • <a href="https://github.com/hermanumrao/Verilog">Verilog MIPS Processor</a> — Hardware descriptive logic verification for computing cores.
+      </td>
+    </tr>
+    <tr>
+      <td><b>⚡ Other Projects</b></td>
+      <td>
+        • <a href="https://github.com/hermanumrao/water_suply_management">water_suply_management</a> — Flask structural tracker back-ended via SQLite.<br>
+        • <a href="https://github.com/hermanumrao/phonebook">phonebook</a> — High-efficiency trie-based lookup tracking array structure.<br>
+        • <a href="https://github.com/hermanumrao/code_templates">code_templates</a> / <a href="https://github.com/hermanumrao/dot-config">dot-config</a> — My Arch Linux daily driver setup environment dots.<br>
+        • <a href="https://github.com/hermanumrao/Rust_simple">Rust_simple</a> / <a href="https://github.com/hermanumrao/c-tutorial">c-tutorial</a> — Language specific syntax engineering trackers.
+      </td>
+    </tr>
+  </table>
+</div>
 
 ---
 
-[![](https://komarev.com/ghpvc/?username=hermanumrao&label=Profile%20Views&color=0e75b6&style=flat)](https://github.com/hermanumrao)
+## 💻 Technical Infrastructure Stack
+
+### **Core Tooling & Runtimes**
+<p align="left">
+  <img src="https://img.shields.io/badge/c-%2300599C.svg?style=flat-square&logo=c&logoColor=white" alt="C"/>
+  <img src="https://img.shields.io/badge/c++-%2300599C.svg?style=flat-square&logo=c%2B%2B&logoColor=white" alt="C++"/>
+  <img src="https://img.shields.io/badge/python-3670A0?style=flat-square&logo=python&logoColor=ffdd54" alt="Python"/>
+  <img src="https://img.shields.io/badge/rust-%23000000.svg?style=flat-square&logo=rust&logoColor=white" alt="Rust"/>
+  <img src="https://img.shields.io/badge/ROS2-%2322314E.svg?style=flat-square&logo=ros&logoColor=white" alt="ROS2"/>
+  <img src="https://img.shields.io/badge/NVIDIA%20Jetson-76B900.svg?style=flat-square&logo=nvidia&logoColor=white" alt="NVIDIA Jetson"/>
+  <img src="https://img.shields.io/badge/-Raspberry_Pi-C51A4A?style=flat-square&logo=Raspberry-Pi" alt="Raspberry Pi"/>
+  <img src="https://img.shields.io/badge/opencv-%23white.svg?style=flat-square&logo=opencv&logoColor=white" alt="OpenCV"/>
+  <img src="https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=flat-square&logo=TensorFlow&logoColor=white" alt="TensorFlow"/>
+  <img src="https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=flat-square&logo=PyTorch&logoColor=white" alt="PyTorch"/>
+  <img src="https://img.shields.io/badge/Arduino-00979D?style=flat-square&logo=Arduino&logoColor=white" alt="Arduino"/>
+  <img src="https://img.shields.io/badge/STM32-03234B.svg?style=flat-square&logo=stmicroelectronics&logoColor=white" alt="STM32"/>
+  <img src="https://img.shields.io/badge/Docker-%230db7ed.svg?style=flat-square&logo=docker&logoColor=white" alt="Docker"/>
+  <img src="https://img.shields.io/badge/CMake-%23008FBA.svg?style=flat-square&logo=cmake&logoColor=white" alt="CMake"/>
+  <img src="https://img.shields.io/badge/Linux-%23FCC624.svg?style=flat-square&logo=linux&logoColor=black" alt="Linux"/>
+</p>
+
+### **Architecture Specializations Breakdown**
+* **Robotics & Control Autonomy:** Nav2 Architecture • Pure Pursuit Mathematics • PID Gain Tuning Loops • Kinematic Matrices (Ackermann / Skid-Steer / Mecanum Platform Drives) • Clearpath Systems • AMRs & UAV Airframe Layouts • FDM Structural 3D Printing Production.
+* **SLAM & State Estimation:** FAST-LIO / SAM-LIO Solid-State & Mechanical LiDAR Pipelines • Cartographer & slam_toolbox Map Tuning • NDT / GICP Point Registration Engines • TEASER++ Arbitrary Frame Alignments • Dense Cloud Diagnostics (`CloudCompare`).
+* **Perception Array Ecosystems:** Livox Solid-State Array Systems • RPLiDAR Scanners • STM32 Custom Serial Ranging Engines • ZED & Intel RealSense Stereoscopic Depth Perception Units • FMCW mmWave Radar Sensors • Ultra-Wideband (UWB) Spatial Positioning Grids.
+* **Embedded Hardware Engineering:** Custom ESP-IDF Systems • STM32 HAL & Low-Layer Low-latency Execution Pipelines • Raw Hardware Transceiver Bring-Up (FTDI, Logic Analyzers, UART/SPI/I2C diagnostics) • Custom Prototyping Power Configurations & Battery Management Units.
+* **Simulation, Graphics & Data Engines:** Nvidia Isaac Sim Systems • Gazebo Classic/Harmonic Ecosystems • PyQt Desktop Control Engine Engineering • Solid SQL/NoSQL Infrastructure Arrays (`PostgreSQL`, `MongoDB`).
+
+---
+
+## 📊 Performance Metrics
+
+<p align="left">
+  <!-- GitHub Streak Stats -->
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=hermanumrao&theme=tokyonight&hide_border=false" alt="Herman's GitHub Streak" height="170"/>
+  
+  <!-- Alternative Reliable Stats Card -->
+  <img src="https://github-readme-stats.vercel.app/api?username=hermanumrao&theme=tokyonight&show_icons=true&count_private=true" alt="Herman's GitHub Stats" height="170"/>
+</p>
+
+
+## 🏆 GitHub Trophies
+
+[![trophy](https://github-trophies.vercel.app/?username=hermanumrao&theme=onedark)](https://github.com/lucthienphong1120/github-trophies)
+
+---
+
+<p align="center">
+  <a href="https://github.com/hermanumrao">
+    <img src="https://komarev.com/ghpvc/?username=hermanumrao&label=Profile%20Views&color=0e75b6&style=flat-square" alt="Profile Views"/>
+  </a>
+</p>
