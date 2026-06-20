@@ -74,8 +74,7 @@ A vector database for word embeddings built from scratch in C++ with minimal dep
 ---
 
 ![](https://github-readme-stats.vercel.app/api?username=hermanumrao&theme=city_lights&hide_border=false&include_all_commits=true&count_private=true)<br/>
-![](https://github-readme-streak-stats.herokuapp.com/?user=hermanumrao&theme=city_lights&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=hermanumrao&theme=city_lights&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
+![](https://github-profile-trophy.vercel.app/?username=hermanumrao&theme=radical&no-frame=false&no-bg=true&margin-w=4)
 
 ---
 
